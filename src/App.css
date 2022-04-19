@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #161111;
+  background-color: #b2aaeb59;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+
+header {
+  background-color: #4545b3;
+  padding: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.header-cur-blocks-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header__cur-block {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.header__cur-block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.currency-title {
+  text-transform: uppercase;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+/* Header end */
+
+/* Converter */
+
+.converter {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.converter select, .converter option {
+  font-weight: 700;
+}
+
+.currency-block {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+@media(max-width: 540px) {
+  .converter {
+    flex-direction: column;
+  }
+
+  .currency-block {
+    width: 100%;
+  }
+
+  .currency-block:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+/* Converter end */
